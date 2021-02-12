@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root" prefHeight="478.0" prefWidth="647.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject2.ConsulterPresenceController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorc" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="209.0" text="Veuillez selectionner un des champ :" textFill="#bfb6b6">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="INFO" size="25" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="cin" labelFloat="true" prefHeight="30.0" prefWidth="228.0" promptText="Cin" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="departement" labelFloat="true" prefHeight="30.0" prefWidth="228.0" promptText="Departement" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="classee" prefHeight="30.0" prefWidth="227.0" promptText="Classe" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton onAction="#onRecherche" text="Rechercher" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="305.0" prefWidth="600.0">
+                     <children>
+                        <TableView fx:id="etudiant" prefHeight="303.0" prefWidth="607.0">
+                          <columns>
+                            <TableColumn fx:id="cine" prefWidth="92.0" text="Cin" />
+                            <TableColumn fx:id="numinsc" prefWidth="66.0" text="NumInsc" />
+                              <TableColumn fx:id="nome" prefWidth="67.0" text="Nom" />
+                              <TableColumn fx:id="prenome" prefWidth="60.0" text="Prénom" />
+                              <TableColumn fx:id="matiere" prefWidth="118.0" text="matiere" />
+                              <TableColumn fx:id="classe" prefWidth="203.0" text="classe" />
+                          </columns>
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                  <MenuItem mnemonicParsing="false" onAction="#onModifier" text="Modifier" />
+                                    <MenuItem mnemonicParsing="false" onAction="#onSupprimer" text="Supprimer" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </TableView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton onAction="#Onretour" text="Retour" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

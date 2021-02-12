@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootanchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="279.0" prefWidth="497.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject2.FXMLController">
+   <children>
+      <HBox prefHeight="62.0" prefWidth="276.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="33.0" text="Quick" textFill="#f29c22">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" top="30.0" />
+               </HBox.margin>
+            </Label>
+            <VBox alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image_icons/ic_launcher.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets right="20.0" top="2.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label maxHeight="25.0" maxWidth="95.0" minHeight="0.0" minWidth="0.0" prefHeight="20.0" prefWidth="73.0" text="Attendance" textFill="#a0a2ab">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" layoutX="374.0" prefHeight="62.0" prefWidth="123.0">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image_icons/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="14.0" layoutY="61.0" prefHeight="218.0" prefWidth="497.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="61.0">
+         <children>
+            <VBox prefHeight="108.0" prefWidth="497.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="44.0" prefWidth="497.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="LOCK" size="50" text="" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="497.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="USER" size="15" wrappingWidth="12.000000715255737" />
+                        <JFXTextField fx:id="user" alignment="BOTTOM_LEFT" focusColor="#4a97ae" labelFloat="true" maxWidth="339.0" minHeight="-Infinity" minWidth="170.0" prefHeight="27.0" prefWidth="177.0" promptText="Identifiant ou Nom" unFocusColor="#a7a3a3">
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <FontAwesomeIconView glyphName="KEY" size="15" />
+                        <JFXPasswordField fx:id="pass" alignment="BOTTOM_LEFT" focusColor="#4a97ae" labelFloat="true" maxWidth="339.0" minHeight="-Infinity" minWidth="150.0" prefHeight="27.0" prefWidth="177.0" promptText="Mot de passe" styleClass="text-field" unFocusColor="#a7a3a3">
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </JFXPasswordField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="87.0" prefWidth="497.0">
+               <children>
+                  <JFXButton onAction="#onPush" prefHeight="31.0" prefWidth="130.0" text="Connexion" textFill="#f8f9ff">
+                     <VBox.margin>
+                        <Insets top="9.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#onMdpOublier" prefHeight="25.0" prefWidth="219.0" styleClass="mdp-o" text="Mot de passe oublier?" textFill="#a0a2ab" underline="true">
+                     <VBox.margin>
+                        <Insets top="9.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">QuickAttendance</string>
+    <string name="todo">TODO</string>
+    <string name="quick_attendance">QUICK ATTENDANCE</string>
+    <string name="log_in">Log In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="or_register_here">Or, Register here</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_use_this_as_a_username">Email (Use this as a Username)</string>
+    <string name="cin_number">CIN Number</string>
+    <string name="ins_number">INS Number</string>
+    <string name="back">Back</string>
+    <string name="register">Register</string>
+    <string name="begin_capture">Begin Capture</string>
+    <string name="click_here"> Click here :</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="emptyString" />
+    <string name="empty" />
+
+    <string-array name="Department">
+        <item name='informatique'>Informatique</item>
+        <item name='mathematique'>Mathematique</item>
+        <item name='physique'>Physique</item>
+    </string-array>
+
+    <string-array name="info">
+        <item name='i1'>LFI1</item>
+        <item name='i2'>LFI2</item>
+        <item name='i3'>LFI3</item>
+    </string-array>
+
+    <string-array name="math">
+        <item name='m1'>LFMA1</item>
+        <item name='m2'>LFMA2</item>
+        <item name='m3'>LFMA3</item>
+    </string-array>
+
+    <string-array name="phy">
+        <item name='p1'>LFPA1</item>
+        <item name='p2'>LFPA2</item>
+        <item name='p3'>LFPA3</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

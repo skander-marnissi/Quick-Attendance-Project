@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/presence" android:title="Presence" android:icon="@drawable/ic_photo_camera_black_24dp"
+        android:clickable="true"
+        />
+    <item android:id="@+id/infos" android:title="Infos" android:icon="@drawable/ic_person_black_24dp" />
+    <item android:id="@+id/historique" android:title="Historique" android:icon="@drawable/ic_archive_black_24dp" />
+    <item android:id="@+id/deco" android:title="Deconnexion" android:icon="@drawable/ic_close_black_24dp"/>
+
+
+</menu>

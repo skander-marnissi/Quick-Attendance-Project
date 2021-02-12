@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="150.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject2.AdminToolBarController">
+   <children>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#onInformation" prefHeight="100.0" prefWidth="150.0" styleClass="toolbar-button" text="Mes informations">
+         <graphic>
+            <FontAwesomeIconView glyphName="USER" size="25" />
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#onAjouteP" prefHeight="100.0" prefWidth="150.0" styleClass="toolbar-button" text="ajouter professeurs">
+         <graphic>
+            <FontAwesomeIconView glyphName="CALENDAR" size="25" text="" />
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#onAjouteE" prefHeight="100.0" prefWidth="150.0" styleClass="toolbar-button" text="ajouter etudiants">
+         <graphic>
+            <FontAwesomeIconView glyphName="" size="25" text="" />
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#onParametre" prefHeight="100.0" prefWidth="150.0" styleClass="toolbar-button" text="paramétres">
+         <graphic>
+            <FontAwesomeIconView glyphName="COG" size="25" />
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#onDeconexion" prefHeight="100.0" prefWidth="150.0" styleClass="toolbar-button" text="Déconexion">
+         <graphic>
+            <FontAwesomeIconView glyphName="" size="25" text="" />
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

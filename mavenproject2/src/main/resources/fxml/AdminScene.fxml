@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="791.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject2.AdminSceneController">
+   <children>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="200.0" resizableOnDrag="true" resizeContent="true" />
+      <AnchorPane>
+         <children>
+            <AnchorPane layoutY="18.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="18.0">
+               <children>
+                  <JFXTabPane prefHeight="514.0" prefWidth="791.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <tabs>
+                        <Tab text="Tableau de bord">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0">
+                                 <children>
+                                    <VBox alignment="CENTER" layoutY="49.0" prefHeight="474.0" prefWidth="791.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="186.0" prefWidth="791.0">
+                                             <children>
+                                                <VBox alignment="CENTER" prefHeight="201.0" prefWidth="367.0">
+                                                   <children>
+                                                      <JFXButton onAction="#onConsulterP" prefHeight="31.0" prefWidth="379.0" text="Liste des Professeurs">
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </JFXButton>
+                                                      <JFXButton onAction="#OnconsulterE" prefHeight="31.0" prefWidth="379.0" text="Liste Des Etudiants">
+                                                         <VBox.margin>
+                                                            <Insets top="10.0" />
+                                                         </VBox.margin>
+                                                      </JFXButton>
+                                                      <JFXButton onAction="#onConsulterPresences" prefHeight="31.0" prefWidth="379.0" text="Liste Des Presences">
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" top="10.0" />
+                                                         </VBox.margin>
+                                                      </JFXButton>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="50.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="233.0" prefWidth="791.0">
+                                             <children>
+                                                <TableView fx:id="operations" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="222.0" prefWidth="366.0" tableMenuButtonVisible="true">
+                                                  <columns>
+                                                      <TableColumn fx:id="oid" prefWidth="22.0" text="Id" />
+                                                    <TableColumn fx:id="ocina" prefWidth="89.0" text="Cin_Admin" />
+                                                    <TableColumn fx:id="opp" prefWidth="103.0" text="Operation" />
+                                                      <TableColumn fx:id="date" minWidth="3.0" prefWidth="173.0" text="Date" />
+                                                  </columns>
+                                                   <HBox.margin>
+                                                      <Insets left="22.0" right="2.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </TableView>
+                                                <TableView fx:id="demande" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="224.0" prefWidth="400.0" tableMenuButtonVisible="true">
+                                                  <columns>
+                                                    <TableColumn fx:id="idd" prefWidth="27.0" text="Id" />
+                                                      <TableColumn fx:id="dcin" prefWidth="58.0" text="Cin" />
+                                                    <TableColumn fx:id="dnom" prefWidth="53.0" text="Nom" />
+                                                      <TableColumn fx:id="dprenom" prefWidth="63.0" text="Prenom" />
+                                                      <TableColumn fx:id="ddescription" prefWidth="188.0" text="Description" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="Consulter Statistiques">
+                          <content>
+                            <AnchorPane fx:id="qranchor" minHeight="0.0" minWidth="0.0" prefHeight="392.0" prefWidth="612.0" />
+                          </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+                  <JFXHamburger fx:id="hamburger" styleClass="jfx-hamburger-icon" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0" />
+                  <MenuBar prefHeight="15.0" prefWidth="791.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-17.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

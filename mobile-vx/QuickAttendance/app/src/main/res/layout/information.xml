@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.pfe.general.quickattendance.Information">
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        app:cardBackgroundColor="#ce7539"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/cdremplir" android:focusable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/remplir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Informations"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/nom"
+
+        android:layout_width="109pt"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prenom"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="28dp"
+
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/labelN"
+        android:layout_width="50pt"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nom"
+        android:layout_alignBottom="@+id/nom"
+        android:layout_alignStart="@+id/labelP"
+        android:text="Nom:"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/prenom"
+        android:layout_width="109pt"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/firecin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/labelP"
+        android:layout_width="50pt"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/prenom"
+        android:layout_alignBottom="@+id/prenom"
+        android:layout_toStartOf="@+id/firecin"
+        android:text="Prenom:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/firecin"
+
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/num_ins"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="42dp"
+        android:layout_alignStart="@+id/prenom"
+        android:layout_width="109pt"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/labelC"
+        android:layout_width="50pt"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/labelP"
+        android:layout_below="@+id/prenom"
+        android:text="Cin:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/num_ins"
+        android:layout_width="109pt"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ta"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="43dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/labelI"
+        android:layout_width="50pt"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num_ins"
+        android:layout_alignBottom="@+id/num_ins"
+        android:layout_alignStart="@+id/cdremplir"
+        android:text="Email:"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/ta"
+        android:layout_width="50pt"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+</RelativeLayout>

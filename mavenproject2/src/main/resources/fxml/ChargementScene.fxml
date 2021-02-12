@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane fx:id="rootpane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject2.ChargementSceneController">
+   <children>
+      <ImageView fitHeight="279.0" fitWidth="497.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Image_icons/scenebuilder.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="279.0" prefWidth="497.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane layoutX="155.0" prefHeight="400.0" prefWidth="279.0">
+               <children>
+                  <Circle fx:id="c1" fill="#1f4fff00" radius="114.0" stroke="#44af8b" strokeType="INSIDE" strokeWidth="9.0" style="-fx-stroke-dash-array: 50;" />
+                  <Circle fx:id="c2" fill="#1f93ff00" radius="87.0" stroke="#a18530" strokeType="INSIDE" strokeWidth="8.0" style="-fx-stroke-dash-array: 25;" />
+                  <Circle fx:id="c3" fill="#1f93ff00" radius="46.0" stroke="#a13230" strokeType="INSIDE" strokeWidth="5.0" style="-fx-stroke-dash-array: 15;" />
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

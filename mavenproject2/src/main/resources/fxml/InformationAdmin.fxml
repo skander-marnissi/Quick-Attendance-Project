@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rooti" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="469.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject2.InformationAdminController">
+    
+    <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="469.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="334.0" prefWidth="469.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="125.0" text="Vos inforamtions :" textFill="#dd985c">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="INFO" size="25" />
+                     </graphic>
+                  </Label>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fx:id="photo" fitHeight="79.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true" x="10.0" y="10.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="152.0" prefWidth="469.0">
+                     <children>
+                        <Label fx:id="cin" prefHeight="27.0" prefWidth="264.0" styleClass="label-sepecial-font">
+                           <graphic>
+                              <Label prefHeight="20.0" prefWidth="70.0" text="Login/Cin :" textFill="#dd985c" />
+                           </graphic>
+                        </Label>
+                        <Label fx:id="nom" prefHeight="27.0" prefWidth="264.0" styleClass="label-sepecial-font" textFill="#dd3333">
+                           <graphic>
+                              <Label prefHeight="21.0" prefWidth="45.0" text="Nom :" textFill="#dd985c" />
+                           </graphic>
+                        </Label>
+                        <Label fx:id="prenom" prefHeight="27.0" prefWidth="264.0" styleClass="label-sepecial-font" textFill="#dd4040">
+                           <graphic>
+                              <Label prefHeight="21.0" prefWidth="65.0" text="Prenom :" textFill="#dd985c" />
+                           </graphic>
+                        </Label>
+                        <Label fx:id="email" prefHeight="27.0" prefWidth="264.0" styleClass="label-sepecial-font" textFill="#9e2020">
+                           <graphic>
+                              <Label prefHeight="21.0" prefWidth="59.0" text="E-mail :" textFill="#dd985c" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0" prefWidth="469.0">
+                     <children>
+                        <JFXButton fx:id="retour" onAction="#onRetour" prefHeight="32.0" prefWidth="102.0" text="Retour">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

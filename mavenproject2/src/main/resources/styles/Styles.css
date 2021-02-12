@@ -1,0 +1,216 @@
+/*Variabel de couleur */
+*{
+    -fx-humbcolor: #E45652;
+    /*couleur gris/noir*/
+    -fx-primary : #2A2E37;
+    /*orange*/
+    -fx-secondary : #DD985C;
+    /*couleur text*/
+    -fx-primarytext : #B2B2B2;
+    -fx-white:#ffff;
+    -fx-green:#5bcc2b;
+}
+
+
+
+/*fond de toutes les scenes*/
+.root{
+    -fx-background-color: -fx-primary;
+    
+    
+}
+.root-special{
+    -fx-background-color: -fx-primary;
+    
+}
+/*fond des icones*/
+.glyph-icon{
+    -fx-fill:-fx-primarytext;
+    
+}
+.special-icon{
+    -fx-fill:#f29c22;
+}
+/*special label font*/
+.label-sepecial-font{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size : 10pt;
+}
+
+/*bouton general*/
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 8pt;
+}
+.button:hover{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+/*scene du login*/
+.login-button{
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    
+}
+
+.login-button:hover{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primarytext;
+}
+/*parcourir*/
+.parcourir-button{
+    -fx-border-color: -fx-humbcolor;
+    -fx-background-color: -fx-humbcolor;
+    
+}
+
+.parcourir-button:hover{
+    -fx-background-color: -fx-white;
+    -fx-text-fill: -fx-primarytext;
+}
+
+.parcourir-button-remplie{
+    -fx-border-color: -fx-green;
+    -fx-background-color: -fx-green;
+    
+}
+.parcourir-button-remplie:hover{
+     -fx-background-color: -fx-white;
+     -fx-text-fill: -fx-primarytext;
+    
+}
+
+.text-field{
+     -fx-text-fill: -fx-primarytext;
+    -fx-font-size : 10pt;
+    -jfx-focus-color: -fx-secondary;
+    -fx-text-fill: derive(-fx-secondary, 20%);
+    -fx-prompt-text-fill:-fx-primarytext;
+    
+}
+
+/* Scene de l'acceuil*/
+
+.toolbar-button
+{
+    -fx-border-color: transparent;
+    -fx-background-color: derive(-fx-primary, 10%);
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+.toolbar-button:hover
+{
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.toolbar-button:hover .glyph-icon
+{
+    -fx-fill: -fx-primary;
+}
+
+.cree{
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 5px;
+}
+.cree:hover{
+    -fx-border-color: -fx-humbcolor;
+    -fx-background-color: -fx-humbcolor;
+    -fx-text-fill: -fx-primarytext;
+}
+
+.jfx-tab-pane .tab-header-area .jfx-rippler{
+    -jfx-rippler-fill:-fx-secondary;
+}
+.jfx-tab-pane .headers-region .tab-selected-line {
+	 -fx-background-color:-fx-secondary;
+ }
+    
+
+.tab{
+    -fx-pref-width : 220; 
+    -fx-pref-height : 40;
+    -fx-background-color:-fx-primary;
+    
+}
+.wrong-credetial{
+    -jfx-unfocus-color: -fx-red;
+    -jfx-focus-color: -fx-red;
+}
+
+
+
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+    
+}
+.menu-bar{
+    -fx-base: -fx-primary; 
+    -fx-background-color: -fx-primary;
+}
+.context-menu{
+    -fx-background-color: derive(-fx-primary,20%);
+    
+}
+.jfx-drawer{
+    -fx-base: -fx-primary;
+}
+.jfx-drawer-side-pane{
+    -fx-background-color: -fx-primary;
+    
+}
+.drawer-button:selected{
+    -fx-background-color: -fx-secondary;
+}
+/*Style Humberger*/
+.jfx-hamburger-icon{
+    -fx-spacing: 5;
+}
+.jfx-hamburger-icon StackPane
+{
+    -fx-background-color: -fx-humbcolor;
+    -fx-barckground-radius: 5px;
+}
+/*bouton des alertes*/
+.dialog-button{
+    -fx-background-color: blue;
+    -fx-border-color:blue;
+    -fx-text-fill: white;
+    
+}
+.dialog-button:hover{
+    -fx-background-color: -fx-primary;
+    -fx-border-color:-fx-primary;
+    -fx-text-fill: -fx-white;
+    
+}
+/*COMBO BOX*/
+.jfx-comboBox{
+    -fx-background-color: -fx-white;
+    -fx-border-color:-fx-primary;
+    
+}
+.text-color{
+    -fx-text-fill : white;
+    -fx-font-size : 13pt;
+    
+}
+.mdp-o{
+    -fx-border-color: -fx-primary;
+   
+    
+}
+.mdp-o:hover{
+   -fx-border-color: -fx-primary;
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: white;
+    
+}
